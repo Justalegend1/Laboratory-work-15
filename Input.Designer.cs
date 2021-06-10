@@ -4,14 +4,14 @@ namespace Laboratory_work_15
     partial class InputKeyForm
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,11 +21,11 @@ namespace Laboratory_work_15
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -38,7 +38,7 @@ namespace Laboratory_work_15
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 103);
+            this.label1.Location = new System.Drawing.Point(12, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 17);
             this.label1.TabIndex = 0;
@@ -46,25 +46,27 @@ namespace Laboratory_work_15
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 103);
+            this.textBox1.Location = new System.Drawing.Point(122, 95);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 22);
+            this.textBox1.Size = new System.Drawing.Size(270, 22);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(29, 232);
+            this.btnSave.Location = new System.Drawing.Point(43, 206);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(136, 38);
+            this.btnSave.Size = new System.Drawing.Size(125, 35);
             this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Сохранить";
+            this.btnSave.Text = "OK";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(220, 232);
+            this.btnCancel.Location = new System.Drawing.Point(233, 206);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(137, 38);
+            this.btnCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCancel.Size = new System.Drawing.Size(159, 35);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Отменить";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -73,13 +75,13 @@ namespace Laboratory_work_15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 351);
+            this.ClientSize = new System.Drawing.Size(512, 308);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "InputKeyForm";
-            this.Text = "Form1";
+            this.Text = "Input";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,4 +95,3 @@ namespace Laboratory_work_15
         private System.Windows.Forms.Button btnCancel;
     }
 }
-
