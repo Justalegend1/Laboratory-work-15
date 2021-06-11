@@ -31,22 +31,22 @@ namespace Laboratory_work_15
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OperationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CreateFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.JoinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.JoinBeginningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.JoinBeforeCurrentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.JoinEndToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeKeyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.JoinItToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteKeyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.DeletItToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.OperationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AverageTemperatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FindDaysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -77,6 +77,34 @@ namespace Laboratory_work_15
             this.toolStripMenuItem1.Size = new System.Drawing.Size(59, 24);
             this.toolStripMenuItem1.Text = "Файл";
             // 
+            // OpenFileToolStripMenuItem
+            // 
+            this.OpenFileToolStripMenuItem.Name = "OpenFileToolStripMenuItem";
+            this.OpenFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.OpenFileToolStripMenuItem.Text = "Открыть...";
+            this.OpenFileToolStripMenuItem.Click += new System.EventHandler(this.OpenFileToolStripMenuItem_Click_1);
+            // 
+            // CreateFileToolStripMenuItem
+            // 
+            this.CreateFileToolStripMenuItem.Name = "CreateFileToolStripMenuItem";
+            this.CreateFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.CreateFileToolStripMenuItem.Text = "Создать";
+            this.CreateFileToolStripMenuItem.Click += new System.EventHandler(this.CreateFileToolStripMenuItem_Click_1);
+            // 
+            // UpdateToolStripMenuItem
+            // 
+            this.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem";
+            this.UpdateToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.UpdateToolStripMenuItem.Text = "Обновить";
+            this.UpdateToolStripMenuItem.Click += new System.EventHandler(this.UpdateToolStripMenuItem_Click);
+            // 
+            // CloseToolStripMenuItem
+            // 
+            this.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem";
+            this.CloseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.CloseToolStripMenuItem.Text = "Выход";
+            this.CloseToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItem_Click);
+            // 
             // EditToolStripMenuItem
             // 
             this.EditToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -84,41 +112,8 @@ namespace Laboratory_work_15
             this.ChangeToolStripMenuItem,
             this.DeleteToolStripMenuItem});
             this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.EditToolStripMenuItem.Text = "Правка";
-            // 
-            // OperationsToolStripMenuItem
-            // 
-            this.OperationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AverageTemperatureToolStripMenuItem,
-            this.FindDaysToolStripMenuItem});
-            this.OperationsToolStripMenuItem.Name = "OperationsToolStripMenuItem";
-            this.OperationsToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-            this.OperationsToolStripMenuItem.Text = "Действия";
-            // 
-            // OpenFileToolStripMenuItem
-            // 
-            this.OpenFileToolStripMenuItem.Name = "OpenFileToolStripMenuItem";
-            this.OpenFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.OpenFileToolStripMenuItem.Text = "Открыть...";
-            // 
-            // CreateFileToolStripMenuItem
-            // 
-            this.CreateFileToolStripMenuItem.Name = "CreateFileToolStripMenuItem";
-            this.CreateFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.CreateFileToolStripMenuItem.Text = "Создать";
-            // 
-            // UpdateToolStripMenuItem
-            // 
-            this.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem";
-            this.UpdateToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.UpdateToolStripMenuItem.Text = "Обновить";
-            // 
-            // CloseToolStripMenuItem
-            // 
-            this.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem";
-            this.CloseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.CloseToolStripMenuItem.Text = "Выход";
+            this.EditToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.EditToolStripMenuItem.Text = "Изменения";
             // 
             // JoinToolStripMenuItem
             // 
@@ -130,6 +125,27 @@ namespace Laboratory_work_15
             this.JoinToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.JoinToolStripMenuItem.Text = "Добавить";
             // 
+            // JoinBeginningToolStripMenuItem
+            // 
+            this.JoinBeginningToolStripMenuItem.Name = "JoinBeginningToolStripMenuItem";
+            this.JoinBeginningToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.JoinBeginningToolStripMenuItem.Text = "В начало";
+            this.JoinBeginningToolStripMenuItem.Click += new System.EventHandler(this.JoinBeginningToolStripMenuItem_Click_1);
+            // 
+            // JoinBeforeCurrentToolStripMenuItem
+            // 
+            this.JoinBeforeCurrentToolStripMenuItem.Name = "JoinBeforeCurrentToolStripMenuItem";
+            this.JoinBeforeCurrentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.JoinBeforeCurrentToolStripMenuItem.Text = "Перед текущим";
+            this.JoinBeforeCurrentToolStripMenuItem.Click += new System.EventHandler(this.JoinBeforeCurrentToolStripMenuItem_Click_1);
+            // 
+            // JoinEndToolStripMenuItem
+            // 
+            this.JoinEndToolStripMenuItem.Name = "JoinEndToolStripMenuItem";
+            this.JoinEndToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.JoinEndToolStripMenuItem.Text = "В конец";
+            this.JoinEndToolStripMenuItem.Click += new System.EventHandler(this.JoinEndToolStripMenuItem_Click_1);
+            // 
             // ChangeToolStripMenuItem
             // 
             this.ChangeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -138,6 +154,20 @@ namespace Laboratory_work_15
             this.ChangeToolStripMenuItem.Name = "ChangeToolStripMenuItem";
             this.ChangeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.ChangeToolStripMenuItem.Text = "Изменить";
+            // 
+            // ChangeKeyToolStripMenuItem
+            // 
+            this.ChangeKeyToolStripMenuItem.Name = "ChangeKeyToolStripMenuItem";
+            this.ChangeKeyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ChangeKeyToolStripMenuItem.Text = "По ключу";
+            this.ChangeKeyToolStripMenuItem.Click += new System.EventHandler(this.ChangeKeyToolStripMenuItem_Click_1);
+            // 
+            // JoinItToolStripMenuItem
+            // 
+            this.JoinItToolStripMenuItem.Name = "JoinItToolStripMenuItem";
+            this.JoinItToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.JoinItToolStripMenuItem.Text = "Выбранный";
+            this.JoinItToolStripMenuItem.Click += new System.EventHandler(this.JoinItToolStripMenuItem_Click_1);
             // 
             // DeleteToolStripMenuItem
             // 
@@ -148,59 +178,42 @@ namespace Laboratory_work_15
             this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.DeleteToolStripMenuItem.Text = "Удалить";
             // 
-            // JoinBeginningToolStripMenuItem
-            // 
-            this.JoinBeginningToolStripMenuItem.Name = "JoinBeginningToolStripMenuItem";
-            this.JoinBeginningToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.JoinBeginningToolStripMenuItem.Text = "В начало";
-            // 
-            // JoinBeforeCurrentToolStripMenuItem
-            // 
-            this.JoinBeforeCurrentToolStripMenuItem.Name = "JoinBeforeCurrentToolStripMenuItem";
-            this.JoinBeforeCurrentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.JoinBeforeCurrentToolStripMenuItem.Text = "Перед текущим";
-            // 
-            // JoinEndToolStripMenuItem
-            // 
-            this.JoinEndToolStripMenuItem.Name = "JoinEndToolStripMenuItem";
-            this.JoinEndToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.JoinEndToolStripMenuItem.Text = "В конец";
-            // 
-            // ChangeKeyToolStripMenuItem
-            // 
-            this.ChangeKeyToolStripMenuItem.Name = "ChangeKeyToolStripMenuItem";
-            this.ChangeKeyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ChangeKeyToolStripMenuItem.Text = "По ключу";
-            // 
-            // JoinItToolStripMenuItem
-            // 
-            this.JoinItToolStripMenuItem.Name = "JoinItToolStripMenuItem";
-            this.JoinItToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.JoinItToolStripMenuItem.Text = "Выбранный";
-            // 
             // DeleteKeyToolStripMenuItem1
             // 
             this.DeleteKeyToolStripMenuItem1.Name = "DeleteKeyToolStripMenuItem1";
             this.DeleteKeyToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.DeleteKeyToolStripMenuItem1.Text = "По ключу";
+            this.DeleteKeyToolStripMenuItem1.Click += new System.EventHandler(this.DeleteKeyToolStripMenuItem1_Click_1);
             // 
             // DeletItToolStripMenuItem1
             // 
             this.DeletItToolStripMenuItem1.Name = "DeletItToolStripMenuItem1";
             this.DeletItToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.DeletItToolStripMenuItem1.Text = "Выбранный";
+            this.DeletItToolStripMenuItem1.Click += new System.EventHandler(this.DeletItToolStripMenuItem1_Click_1);
+            // 
+            // OperationsToolStripMenuItem
+            // 
+            this.OperationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AverageTemperatureToolStripMenuItem,
+            this.FindDaysToolStripMenuItem});
+            this.OperationsToolStripMenuItem.Name = "OperationsToolStripMenuItem";
+            this.OperationsToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.OperationsToolStripMenuItem.Text = "Действия";
             // 
             // AverageTemperatureToolStripMenuItem
             // 
             this.AverageTemperatureToolStripMenuItem.Name = "AverageTemperatureToolStripMenuItem";
             this.AverageTemperatureToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.AverageTemperatureToolStripMenuItem.Text = "Средняя температура";
+            this.AverageTemperatureToolStripMenuItem.Click += new System.EventHandler(this.AverageTemperatureToolStripMenuItem_Click_1);
             // 
             // FindDaysToolStripMenuItem
             // 
             this.FindDaysToolStripMenuItem.Name = "FindDaysToolStripMenuItem";
-            this.FindDaysToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.FindDaysToolStripMenuItem.Text = "Отрезок";
+            this.FindDaysToolStripMenuItem.Size = new System.Drawing.Size(357, 26);
+            this.FindDaysToolStripMenuItem.Text = "Отрезок между отриц температурами";
+            this.FindDaysToolStripMenuItem.Click += new System.EventHandler(this.FindDaysToolStripMenuItem_Click_1);
             // 
             // listBox1
             // 
@@ -221,6 +234,7 @@ namespace Laboratory_work_15
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

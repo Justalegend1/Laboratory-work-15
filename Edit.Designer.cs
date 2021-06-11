@@ -61,6 +61,7 @@ namespace Laboratory_work_15
             this.txtDayNumber.Name = "txtDayNumber";
             this.txtDayNumber.Size = new System.Drawing.Size(251, 22);
             this.txtDayNumber.TabIndex = 2;
+            this.txtDayNumber.TextChanged += new System.EventHandler(this.txtDayNumber_TextChanged);
             // 
             // txtTemperature
             // 
@@ -68,6 +69,7 @@ namespace Laboratory_work_15
             this.txtTemperature.Name = "txtTemperature";
             this.txtTemperature.Size = new System.Drawing.Size(219, 22);
             this.txtTemperature.TabIndex = 3;
+            this.txtTemperature.TextChanged += new System.EventHandler(this.txtTemperature_TextChanged_1);
             // 
             // btnSave
             // 
@@ -77,6 +79,7 @@ namespace Laboratory_work_15
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Сохранить";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnCancel
             // 
@@ -86,7 +89,7 @@ namespace Laboratory_work_15
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Отменить";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // EditForm
             // 
@@ -101,6 +104,7 @@ namespace Laboratory_work_15
             this.Controls.Add(this.label1);
             this.Name = "EditForm";
             this.Text = "Edit";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

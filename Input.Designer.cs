@@ -40,9 +40,9 @@ namespace Laboratory_work_15
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 17);
+            this.label1.Size = new System.Drawing.Size(102, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Введите ключ:";
+            this.label1.Text = "Введите день:";
             // 
             // textBox1
             // 
@@ -60,6 +60,7 @@ namespace Laboratory_work_15
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "OK";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnCancel
             // 
@@ -70,6 +71,7 @@ namespace Laboratory_work_15
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Отменить";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // InputKeyForm
             // 
@@ -82,6 +84,7 @@ namespace Laboratory_work_15
             this.Controls.Add(this.label1);
             this.Name = "InputKeyForm";
             this.Text = "Input";
+            this.Load += new System.EventHandler(this.InputKeyForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

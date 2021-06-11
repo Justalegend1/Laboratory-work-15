@@ -16,7 +16,7 @@ namespace Laboratory_work_15
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InputKeyForm());
+            Application.Run(new MainForm());
         }
     }
 }
